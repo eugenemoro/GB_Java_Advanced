@@ -23,10 +23,14 @@ public class Exercise {
 	}
 
 	public boolean containsOnesAndFours(int[] arr){
+		boolean hasOne= false;
+		boolean hasFour = false;
 		if (arr.length == 0) return false;
 		for (int el : arr) {
 			if ((el != 1) && (el != 4)) return false;
+			if (el == 1) hasOne = true;
+			if (el == 4) hasFour = true;
 		}
-		return true;
+		return hasOne && hasFour;
 	}
 }

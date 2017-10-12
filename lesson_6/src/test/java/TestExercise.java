@@ -42,12 +42,12 @@ public class TestExercise {
 
 	@Test
 	public void containsOnesAndFoursTest2(){
-		Assert.assertTrue(exercise.containsOnesAndFours(new int[]{1}));
+		Assert.assertFalse(exercise.containsOnesAndFours(new int[]{1}));
 	}
 
 	@Test
 	public void containsOnesAndFoursTest3(){
-		Assert.assertTrue(exercise.containsOnesAndFours(new int[]{4}));
+		Assert.assertFalse(exercise.containsOnesAndFours(new int[]{4}));
 	}
 
 	@Test
